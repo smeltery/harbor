@@ -1,4 +1,4 @@
-:root { --paper:#faf8f3; --ink:#192f49; --muted:#667386; --line:#dce0e5; --accent:#42698f; --soft:#eaf0f5; font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); font-synthesis:none; }
+:root { --paper:#faf8f3; --ink:#192f49; --muted:#58677b; --line:#dce0e5; --accent:#42698f; --soft:#eaf0f5; font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); font-synthesis:none; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:32px; }
 body { margin:0; }
