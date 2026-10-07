@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f7f2">
+<title>Harbor — Give your agents room to work.</title>
+<meta name="description" content="A quiet home for Mac app testing. Slipway gives agents their own screen. Porthole lets you see what happens on it.">
+<meta property="og:title" content="Harbor — Mac app testing with room to focus">
+<meta property="og:description" content="A quiet home for Mac app testing. Slipway gives agents their own screen. Porthole lets you see what happens on it.">
+<meta property="og:type" content="website">
+<link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./layout.css">
+<script src="./demo.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="shell"><nav aria-label="Primary">
+<a class="brand" href="#top"><img src="./assets/logo.svg" alt="">harbor<span>.</span></a>
+<div class="nav-links"><a href="#why">Why Harbor</a><a href="#together">The family</a><a href="#faq">FAQ</a></div>
+<a class="nav-cta" href="https://github.com/smeltery/harbor">GitHub ↗</a>
+</nav></header>
+<main id="main">
+<section class="hero shell" id="top" aria-labelledby="hero-title">
+<p class="eyebrow">One workspace. A little more peace.</p>
+<h1 id="hero-title">Give your agents<br><em>room to work.</em></h1>
+<p class="lead">A quiet home for Mac app testing. Slipway gives agents their own screen. Porthole lets you see what happens on it.</p>
+<div class="actions"><a class="button primary" href="#start">Plant your workspace <span aria-hidden="true">↗</span></a><a class="button" href="#demo">See the workflow <span aria-hidden="true">↓</span></a></div>
+<p class="fine">Two independent tools · One shared workflow</p>
+<div class="demo-stage" id="demo">
+<div class="window">
+<div class="titlebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="window-title">Harbor / a quieter test session</span></div>
+<div class="workspace"><aside class="sidebar" aria-label="Example session"><p class="label">WORKSPACE</p><div class="side-item active">Live session <span>01</span></div><div class="side-item">Agent chats <span>01</span></div><div class="side-item">App builds <span>01</span></div><br><p class="label">CURRENT TARGET</p><div class="side-item">macOS guest <span>↗</span></div></aside>
+<div class="preview"><div class="preview-head"><strong>Checking the new search field</strong><span class="status">Sample session</span></div>
+<div class="terminal" aria-live="polite" aria-atomic="true"><code id="demo-output"><span class="muted"># Your build. Their desktop.</span>
+<span class="prompt">$</span> slipway open build/Notes.app
+
+Copied Notes.app to the guest
+Launched Notes · window ready
+<span class="muted">Your desktop stays exactly where you left it.</span></code></div>
+<div class="demo-controls" role="group" aria-label="Explore an illustrative session"><button type="button" data-step="launch" aria-pressed="true">01 Launch</button><button type="button" data-step="inspect" aria-pressed="false">02 Inspect</button><button type="button" data-step="observe" aria-pressed="false">03 Observe</button><span class="sample">Illustrative output · no VM connected</span></div>
+</div></div></div>
+</div><div class="caption"><span>BUILT ON YOUR MAC. TESTED ON ITS OWN.</span><span>NO FOCUS STOLEN.</span></div>
+</section>
+<section class="content shell" id="why"><div class="section-head"><div><span class="section-index">01 / A little breathing room</span><h2>Your desktop.<br><em>Still yours.</em></h2></div><p>Agents need to check their work. You need to keep doing yours. Harbor brings the runner and the observer together, with each tool free to evolve on its own.</p></div><div class="features"><article class="feature"><span class="number">01 /</span><h3>A screen of their own</h3><p>Slipway opens builds in a headless macOS VM. Clicks, keystrokes and screenshots stay there.</p></article>
+<article class="feature"><span class="number">02 /</span><h3>A window into the work</h3><p>Porthole shows the live screen and connects each command to the agent and chat that ran it.</p></article>
+<article class="feature"><span class="number">03 /</span><h3>Together, loosely coupled</h3><p>Clone both tools in one command. Update clean worktrees safely. Keep independent histories and releases.</p></article></div></section>
+<section class="content shell" id="together"><div class="section-head"><div><span class="section-index">02 / Better together</span><h2>Small tools.<br><em>A shared purpose.</em></h2></div><p>Each tool has its own repository and release. One shared configuration and activity log connect the runner to the observer.</p></div><div class="flow"><a class="flow-item" href="https://smeltery.github.io/harbor/"><img src="./assets/harbor.svg" alt=""><span><strong>Harbor</strong><small>Assemble the workspace</small></span></a> <span class="arrow" aria-hidden="true">→</span> <a class="flow-item" href="https://smeltery.github.io/slipway/"><img src="./assets/slipway.svg" alt=""><span><strong>Slipway</strong><small>Run the test</small></span></a> <span class="arrow" aria-hidden="true">→</span> <a class="flow-item" href="https://smeltery.github.io/porthole/"><img src="./assets/porthole.svg" alt=""><span><strong>Porthole</strong><small>Watch the work</small></span></a></div></section>
+<section class="content shell" id="faq"><div class="section-head"><div><span class="section-index">03 / Good to know</span><h2>A few practical<br><em>details.</em></h2></div><p>Local tools, explicit permissions, and documentation for the parts that matter.</p></div><details><summary>Is Harbor another VM runtime?</summary><p>No. Harbor assembles the two standalone repositories. Slipway uses Tart and SSH; Porthole observes their activity.</p></details>
+<details><summary>Will updates overwrite my work?</summary><p>No. Harbor skips dirty worktrees, feature branches and detached HEADs. Updates use fast-forward-only pulls.</p></details>
+<details><summary>Which Macs can use this?</summary><p>Local Tart VMs need Apple silicon. Porthole runs on macOS 15+ and can watch an existing remote Mac from Intel too.</p></details></section>
+<section class="start shell" id="start"><div><span class="section-index">04 / Start here</span><h2>Make a little<br><em>working room.</em></h2><p>Follow the <a href="https://github.com/smeltery/harbor/blob/main/docs/getting-started.md"><u>installation guide</u></a> for requirements and your first session.</p></div><div class="install"><div class="install-head"><span>TERMINAL / GET STARTED</span><button id="copy" type="button">Copy</button></div><pre><code id="install-command">git clone https://github.com/smeltery/harbor.git
+cd harbor
+bash scripts/fleet.sh setup</code></pre><p id="copy-status" role="status"></p></div></section>
+</main>
+<footer class="shell"><span>Harbor · Made by Smeltery</span><div class="links"><a href="https://github.com/smeltery/harbor/blob/main/docs/README.md">Documentation</a><a href="https://github.com/smeltery/harbor/releases">Releases</a><a href="https://github.com/smeltery/harbor/blob/main/LICENSE">License</a></div></footer>
+</body></html>
