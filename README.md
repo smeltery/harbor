@@ -1,5 +1,7 @@
 # <img src="assets/logo.svg" width="36" height="36" alt="" /> harbor
 
+![Harbor — Give your agents room to work.](assets/og.png)
+
 [![CI](https://github.com/smeltery/harbor/actions/workflows/ci.yml/badge.svg)](https://github.com/smeltery/harbor/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/smeltery/harbor)](https://github.com/smeltery/harbor/releases)
 [![Bash](https://img.shields.io/badge/Bash-native-4c766b?logo=bash)](docs/development.md)

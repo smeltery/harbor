@@ -30,3 +30,9 @@ appears in Porthole. Never capture private desktop content for site artwork.
 
 Run `bun run build:site` to produce `dist/site`. Serve that directory with any
 static HTTP server. The site has no framework, external fonts or runtime service.
+
+## Social artwork
+
+`assets/og.svg` is the editable 1200 × 630 share card. Export it at its native
+size to `assets/og.png` after artwork changes. The README and site social metadata
+use the PNG; the metadata uses its public GitHub URL until a site domain is chosen.
