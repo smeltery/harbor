@@ -23,3 +23,21 @@ document.querySelector("#copy").addEventListener("click", async () => {
     status.textContent = "Copy unavailable. Select the commands above to copy manually.";
   }
 });
+
+const menuButton = document.querySelector(".nav-toggle");
+const menu = document.querySelector("#nav-links");
+function setMenu(open) {
+  menu.dataset.open = String(open);
+  menuButton.setAttribute("aria-expanded", String(open));
+  menuButton.textContent = open ? "Close" : "Menu";
+}
+menuButton.addEventListener("click", () => setMenu(menuButton.getAttribute("aria-expanded") !== "true"));
+menu.addEventListener("click", (event) => {
+  if (event.target.closest("a")) setMenu(false);
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+    setMenu(false);
+    menuButton.focus();
+  }
+});

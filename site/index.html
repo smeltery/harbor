@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f7f7f2">
+<meta name="theme-color" content="#faf8f3">
 <title>Harbor — Give your agents room to work.</title>
 <meta name="description" content="A quiet home for Mac app testing. Slipway gives agents their own screen. Porthole lets you see what happens on it.">
 <meta property="og:title" content="Harbor — Mac app testing with room to focus">
@@ -16,17 +16,23 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="shell"><nav aria-label="Primary">
-<a class="brand" href="#top"><img src="./assets/logo.svg" alt="">harbor<span>.</span></a>
-<div class="nav-links"><a href="#why">Why Harbor</a><a href="#together">The family</a><a href="#faq">FAQ</a></div>
-<a class="nav-cta" href="https://github.com/smeltery/harbor">GitHub ↗</a>
+<header class="shell"><nav class="site-nav" aria-label="Primary">
+<a class="brand" href="#top" aria-label="Harbor home"><img src="./assets/logo.svg" alt="">harbor</a>
+<div class="nav-right">
+<div class="nav-links" id="nav-links">
+<a href="#why">Overview</a><a href="#demo">How it works</a><a href="https://github.com/smeltery/harbor/blob/main/docs/README.md">Documentation</a>
+<a class="github-link" href="https://github.com/smeltery/harbor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>GitHub</a>
+</div>
+<a class="nav-cta" href="#start">Set up Harbor <span aria-hidden="true">↗</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+</div>
 </nav></header>
 <main id="main">
 <section class="hero shell" id="top" aria-labelledby="hero-title">
 <p class="eyebrow">One workspace. A little more peace.</p>
 <h1 id="hero-title">Give your agents<br><em>room to work.</em></h1>
 <p class="lead">A quiet home for Mac app testing. Slipway gives agents their own screen. Porthole lets you see what happens on it.</p>
-<div class="actions"><a class="button primary" href="#start">Plant your workspace <span aria-hidden="true">↗</span></a><a class="button" href="#demo">See the workflow <span aria-hidden="true">↓</span></a></div>
+<div class="actions"><a class="button primary" href="#start">Set up your workspace <span aria-hidden="true">↗</span></a><a class="button" href="#demo">See the workflow <span aria-hidden="true">↓</span></a></div>
 <p class="fine">Two independent tools · One shared workflow</p>
 <div class="demo-stage" id="demo">
 <div class="window">
@@ -54,5 +60,20 @@ Launched Notes · window ready
 cd harbor
 bash scripts/fleet.sh setup</code></pre><p id="copy-status" role="status"></p></div></section>
 </main>
-<footer class="shell"><span>Harbor · Made by Smeltery</span><div class="links"><a href="https://github.com/smeltery/harbor/blob/main/docs/README.md">Documentation</a><a href="https://github.com/smeltery/harbor/releases">Releases</a><a href="https://github.com/smeltery/harbor/blob/main/LICENSE">License</a></div></footer>
+<footer class="site-footer">
+<div class="shell footer-main">
+<div class="footer-brand"><a class="brand" href="#top"><img src="./assets/logo.svg" alt="">harbor</a><p>A home for focused Mac app testing.</p></div>
+<nav class="footer-links" aria-label="Footer">
+<div class="footer-col"><h2>Product</h2><ul>
+<li><a href="#why">Overview</a></li><li><a href="#demo">The workflow</a></li><li><a href="https://github.com/smeltery/harbor/releases">Releases</a></li><li><a href="#faq">Common questions</a></li>
+</ul></div>
+<div class="footer-col"><h2>Resources</h2><ul>
+<li><a href="https://github.com/smeltery/harbor/blob/main/docs/getting-started.md">Getting started</a></li><li><a href="https://github.com/smeltery/harbor/blob/main/docs/README.md">Documentation</a></li><li><a href="https://github.com/smeltery/harbor/blob/main/docs/development.md">Contributing</a></li><li><a href="https://github.com/smeltery/harbor/issues">Report an issue</a></li>
+</ul></div>
+<div class="footer-col"><h2>The family</h2><ul>
+<li><a href="https://github.com/smeltery/harbor">Harbor</a></li><li><a href="https://github.com/smeltery/slipway">Slipway</a></li><li><a href="https://github.com/smeltery/porthole">Porthole</a></li><li><a href="https://github.com/smeltery">More from Smeltery ↗</a></li>
+</ul></div>
+</nav></div>
+<div class="shell footer-bottom"><span>© 2026 Smeltery</span><div><a href="https://github.com/smeltery/harbor/blob/main/LICENSE">PolyForm Shield 1.0.0</a><a href="https://github.com/smeltery/harbor/blob/main/docs/configuration.md#privacy">Privacy &amp; data</a><a href="#top">Back to top ↑</a></div></div>
+</footer>
 </body></html>
