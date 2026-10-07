@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
           export RELEASE_VERSION="${RELEASE_TAG#v}"
           mkdir -p dist
-          tar -czf "dist/harbor-$RELEASE_VERSION.tar.gz" scripts docs LICENSE README.md
+          git archive --format=tar.gz --prefix="harbor-$RELEASE_VERSION/" HEAD > "dist/harbor-$RELEASE_VERSION.tar.gz"
           cd dist
           sha256sum ./*.tar.gz > SHA256SUMS
       - name: Publish artifacts
