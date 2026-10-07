@@ -5,7 +5,7 @@
   "packageManager": "bun@1.3.13",
   "scripts": {
     "check": "bash scripts/check.sh",
-    "test": "bun test",
+    "test": "bun test ./tests",
     "build:site": "bun scripts/build-site.ts",
     "check:docs": "bun scripts/check-docs.ts",
     "check:budget": "bun scripts/check-budget.ts"

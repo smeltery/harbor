@@ -11,3 +11,4 @@ dist/
 .flox/lib/
 slipway/
 porthole/
+.vercel/

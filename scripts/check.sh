@@ -5,5 +5,5 @@ bun run check:docs
 bun run check:budget
 actionlint
 shellcheck scripts/*.sh .githooks/pre-commit
-bun test
+bun test ./tests
 bun run build:site

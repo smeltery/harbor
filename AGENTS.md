@@ -11,5 +11,4 @@ copies or launch test apps on the user's desktop. Keep each source file within
 `budget.json`; explain any budget increase in review.
 
 Use Bun for repository tooling, Bash for Slipway and Swift for Porthole.
-Keep upstream notices in distributed artifacts and `LICENSE` byte-identical to
-Smeltery Hab. Never add credentials, downloaded VM images or runtime logs.
+Keep upstream notices in distributed artifacts and preserve `LICENSE`. Never add credentials, downloaded VM images or runtime logs.

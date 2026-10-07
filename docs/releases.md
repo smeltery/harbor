@@ -12,6 +12,17 @@ dispatch with the same tag. Auto-release concurrency serializes tag creation.
 
 Harbor distributes its workspace scripts, documentation and license as a tarball.
 
-The `pages` workflow deploys `dist/site` through GitHub Pages after successful CI
-on `main`. The public site is <https://smeltery.github.io/harbor/>.
-Pages must use GitHub Actions as its build source in repository settings.
+## Website deployment
+
+The landing site is ready for Vercel. Import this repository as a separate
+Vercel project with the repository root as its Root Directory. The committed
+`vercel.json` selects the Other framework preset, skips dependency installation,
+copies the static site and brand assets, and publishes `dist/site`.
+No Bun, Swift or Flox installation is needed on the Vercel builder.
+
+Deployment is managed by the repository owner in Vercel. GitHub Actions only
+validates the site; it does not deploy it. Once domains are assigned, update
+repository homepages and the family links in `site/index.html`. Those links
+currently point to each tool's GitHub repository.
+
+See [Vercel's static configuration reference](https://vercel.com/docs/project-configuration/vercel-json).
