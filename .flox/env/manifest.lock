@@ -23,6 +23,12 @@
       "shellcheck": {
         "pkg-path": "shellcheck",
         "outputs": "all"
+      },
+      "tart": {
+        "pkg-path": "tart",
+        "systems": [
+          "aarch64-darwin"
+        ]
       }
     },
     "hook": {
@@ -829,6 +835,37 @@
         "out": "/nix/store/pmk1wsbpsxkaa33mrigc72iln3pvy9r2-shellcheck-0.11.0"
       },
       "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tart",
+      "broken": false,
+      "derivation": "/nix/store/ma2xdrr57pigjgk3zxqm6w875z1idrwa-tart-2.30.6.drv",
+      "description": "macOS and Linux VMs on Apple Silicon to use in CI and other automations",
+      "install_id": "tart",
+      "license": "Fair Source License, version 0.9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "tart-2.30.6",
+      "pname": "tart",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:15:16.102106Z",
+      "stabilities": [
+        "staging",
+        "unstable",
+        "stable"
+      ],
+      "unfree": true,
+      "version": "2.30.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2hlnrl9iga45znqrdjqslpa2w58442lx-tart-2.30.6"
+      },
+      "system": "aarch64-darwin",
       "group": "toplevel",
       "priority": 5
     }

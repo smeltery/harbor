@@ -8,7 +8,7 @@ flox activate -- bun run check
 ```
 
 The committed Flox manifest and lock pin Bun, Git, GitHub CLI, ShellCheck,
-Actionlint and pre-commit. Activation sets the repository's `.githooks` path.
+Actionlint and pre-commit, plus Tart on Apple silicon Macs. Activation sets the repository's `.githooks` path.
 The hook runs the complete CI gate. Alternatively run
 `flox activate -- pre-commit run --all-files` using the included configuration.
 Install dependencies before your first commit. Updating dependencies means

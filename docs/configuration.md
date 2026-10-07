@@ -16,7 +16,7 @@ TEST_HOST=
 TEST_USER=admin
 ```
 
-`VM`, `TEST_HOST`, `TEST_USER` and `KEY` affect both tools. `KEY` must be an
+`VM`, `TART`, `TEST_HOST`, `TEST_USER` and `KEY` affect both tools. `KEY` must be an
 absolute path; its default is `~/.ssh/slipway_ed25519` under your home directory.
 Image, CPU, memory and display settings configure new VMs during `slipway setup`.
 To resize an existing VM, stop it first and use `tart set`.
@@ -36,6 +36,21 @@ Remote mode does not create, start or stop a Tart VM.
 | Screenshots | `/tmp/slipway` |
 | Shared SSH socket | `/tmp/slipway-ssh-%C` |
 | VM launch agent | `~/Library/LaunchAgents/io.smeltery.slipway.plist` |
+
+## Tart through Flox
+
+The pinned Flox environment includes Tart on Apple silicon Macs. Use
+`flox activate -- slipway status` (or `./slipway` from its checkout).
+Porthole launched from Finder does not inherit a terminal's PATH. To use the
+same Flox-provided Tart, add its absolute path as a literal `TART` setting:
+
+```sh
+flox activate -- which tart
+```
+
+Copy the printed path into `TART=/absolute/path/to/tart` in the shared config.
+Update that setting if you move the checkout or change its environment.
+Launching Porthole's executable from an activated Flox shell also inherits PATH.
 
 ## Migration
 
