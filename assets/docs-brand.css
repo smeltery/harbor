@@ -1,0 +1,11 @@
+@font-face { font-family: "Space Grotesk"; src: url("./fonts/SpaceGrotesk.ttf") format("truetype"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("./fonts/JetBrainsMono.ttf") format("truetype"); font-weight: 100 800; font-display: swap; }
+:root {
+  --harbor-ink: #192f49;
+  --harbor-paper: #faf8f3;
+  --harbor-accent: #42698f;
+  --harbor-steel: #58677b;
+  --harbor-border: #dce0e5;
+  --harbor-font-sans: "Space Grotesk", system-ui, sans-serif;
+  --harbor-font-mono: "JetBrains Mono", ui-monospace, monospace;
+}

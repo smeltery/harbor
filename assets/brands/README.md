@@ -7,3 +7,7 @@ Third-party marks identify the tools used by this project.
 - Flox: [official favicon](https://flox.dev/favicon.svg).
 - Git: [Simple Icons](https://simpleicons.org/), CC0.
 - Smeltery Labs: shared organization mark from `smeltery/trellis/fork/branding/smeltery.png`.
+- Chat provider marks: reused from the [Stoke documentation site](https://stoke-two.vercel.app/docs/), identifying the destinations in the shared Open in chat menu.
+
+Documentation typography reuses Space Grotesk and JetBrains Mono from Stoke.
+Their SIL Open Font License notices are distributed in `assets/fonts/`.

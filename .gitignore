@@ -9,6 +9,7 @@ dist/
 .flox/run/
 .flox/log/
 .flox/lib/
-slipway/
-porthole/
+/slipway/
+/porthole/
 .vercel/
+web/docs/content.generated.json

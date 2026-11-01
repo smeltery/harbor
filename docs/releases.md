@@ -16,9 +16,11 @@ Harbor distributes its workspace scripts, documentation and license as a tarball
 
 The landing site is ready for Vercel. Import this repository as a separate
 Vercel project with the repository root as its Root Directory. The committed
-`vercel.json` selects the Other framework preset, skips dependency installation,
-copies the static site and brand assets, and publishes `dist/site`.
-No Bun, Swift or Flox installation is needed on the Vercel builder.
+`vercel.json` selects the Other framework preset, installs the locked Bun
+dependencies, builds the landing page and documentation, and publishes
+`dist/site`. No Swift or Flox installation is needed on the Vercel builder.
+The production site is [harbor-topaz.vercel.app](https://harbor-topaz.vercel.app),
+with the searchable documentation at [/docs/](https://harbor-topaz.vercel.app/docs/).
 
 Deployment is managed by the repository owner in Vercel. GitHub Actions only
 validates the site; it does not deploy it. Once domains are assigned, update

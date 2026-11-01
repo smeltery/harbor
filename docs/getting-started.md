@@ -13,6 +13,6 @@ bash scripts/fleet.sh setup
 This clones `slipway/` and `porthole/` as independent repositories. Re-running
 setup preserves existing work. Member directories are ignored by Harbor's Git.
 
-Continue with [Slipway installation](https://github.com/smeltery/slipway/blob/main/docs/getting-started.md)
-and [Porthole installation](https://github.com/smeltery/porthole/blob/main/docs/getting-started.md).
+Continue with [Slipway installation](members/slipway/getting-started.md)
+and [Porthole installation](members/porthole/getting-started.md).
 For contributor tooling, use [Flox](development.md).

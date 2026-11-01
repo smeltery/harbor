@@ -1,0 +1,36 @@
+@import "./base.css";
+@import "./docs.css";
+@import "./docs-content.css";
+@import "./docs-mobile.css";
+@import "./actions/doc-actions.css";
+
+:root {
+  --paper: var(--harbor-paper);
+  --ink: var(--harbor-ink);
+  --muted: var(--harbor-steel);
+  --line: var(--harbor-border);
+  --font: var(--harbor-font-sans);
+}
+.brand { display: inline-flex; align-items: center; gap: 7px; font-weight: 650; letter-spacing: -.055em; }
+.brand-heading { display: inline-flex; align-items: center; gap: 7px; }
+.brand-icon { object-fit: contain; flex-shrink: 0; }
+.docs-header .brand { color: var(--ink); font-size: 24px; }
+.docs-header .brand img { width: 32px; height: 32px; }
+.docs-main .eyebrow { margin-bottom: 20px; font-size: 12px; text-transform: uppercase; }
+.docs-overview h1 { font-size: clamp(40px, 5vw, 62px); }
+.docs-overview { border-bottom: 1px solid var(--line); padding-bottom: 44px; margin-bottom: 40px; }
+.docs-main h3 { margin: 28px 0 14px; font-size: 19px; }
+.docs-main h4 { margin: 24px 0 12px; }
+.docs-main li + li { margin-top: 8px; }
+.docs-main blockquote { margin: 24px 0; padding: 16px 20px; border-left: 3px solid var(--harbor-accent); background: #EAF0F5; }
+.doc-inline a { text-decoration: underline; text-underline-offset: 3px; color: var(--harbor-accent); }
+.doc-inline img { max-width: 100%; height: auto; }
+.doc-inline { overflow-wrap: anywhere; }
+.docs-code pre, .docs-code-heading, .docs-base code { font-family: var(--harbor-font-mono); }
+.doc-diagram { margin: 24px 0; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: #FDFCFA; overflow: auto; }
+.doc-diagram svg { display: block; max-width: 100%; margin: auto; height: auto; }
+.doc-diagram pre { font: 12px/1.8 var(--harbor-font-mono); }
+.doc-diagram figcaption { font-size: 12px; color: var(--muted); }
+:focus-visible { outline-color: var(--harbor-ink); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+@media (max-width: 370px) { .docs-header { padding-inline: 12px; gap: 8px; } .docs-header nav { font-size: 10px; } }

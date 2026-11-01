@@ -7,12 +7,23 @@
     "check": "bash scripts/check.sh",
     "test": "bun test ./tests",
     "build:site": "bun scripts/build-site.ts",
+    "dev:site": "bun run build:site && bun scripts/serve-site.ts",
     "check:docs": "bun scripts/check-docs.ts",
-    "check:budget": "bun scripts/check-budget.ts"
+    "check:budget": "bun scripts/check-budget.ts",
+    "docs:sync": "bun scripts/sync-docs.ts",
+    "check:types": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/bun": "1.4.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "highlight.js": "11.12.0",
     "linkedom": "0.18.13",
+    "markdown-it": "15.0.3",
     "markdownlint": "0.41.1",
-    "mermaid": "12.1.0"
+    "mermaid": "12.1.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2"
   }
 }

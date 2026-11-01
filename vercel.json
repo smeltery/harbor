@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "",
-  "buildCommand": "mkdir -p dist/site && cp -R site/. dist/site/ && cp -R assets dist/site/",
+  "installCommand": "bun install --frozen-lockfile",
+  "buildCommand": "bun run build:site",
   "outputDirectory": "dist/site"
 }
